@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profile Card</title>
-  <link rel="stylesheet" href="cardcss.css"/>
+  <meta charset="UTF-8" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="cardcss.css" />
 </head>
 <body>
+  
+  <div id="overlay">Tap to View</div>
+
   <div class="card">
-    <img src="C.C.jpg" class="profile-img" />
+    <img src="C.C.jpg" alt="Profile Image" class="profile-img" />
     <div class="profile-info">
-      <h2>Proxima </h2>
-      <p>Age: ??</p>
-      <p>Favourite song: a Cruel Angels Thesis/Endless Embrace/Yuukyou Seishunka </p>
-      <p>Hobbies: messing with html or js/trying to learn it</p>
+      <h2>Your Name</h2>
+      <p>This is your profile description. Add more info here as you like.</p>
     </div>
   </div>
 
-
-<audio id="bgMusic" loop>
-    <source src="embrace.mp3" type="audio/mp3" />
-    
+  <audio id="bgMusic" loop>
+    <source src="your-audio-file.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
   </audio>
 
   <script>
+    
     const overlay = document.getElementById('overlay');
     const card = document.querySelector('.card');
     const bgMusic = document.getElementById('bgMusic');
 
     overlay.addEventListener('click', () => {
-      overlay.style.display = 'none';  // Hide overlay
-      card.style.display = 'block';    // Show profile
-      bgMusic.play();                  // Start music
+      overlay.style.display = 'none';  
+      card.style.display = 'block';    
+      bgMusic.play();              
     });
   </script>
 
