@@ -28,11 +28,9 @@
 
   <audio id="bgMusic" loop>
     <source src="embrace.mp3" type="audio/mpeg" />
-    
   </audio>
 
   <script>
-    
     const overlay = document.getElementById('overlay');
     const card = document.querySelector('.card');
     const bgMusic = document.getElementById('bgMusic');
@@ -40,7 +38,7 @@
     overlay.addEventListener('click', () => {
       overlay.style.display = 'none';  
       card.style.display = 'block';    
-      bgMusic.play();              
+      bgMusic.play().catch(e => console.log("Audio play failed usually due to browser permissions:", e));              
     });
   </script>
 
