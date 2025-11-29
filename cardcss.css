@@ -16,7 +16,7 @@ body {
   color: #b7b9d6;
   text-align: center;
   box-shadow: 0 6px 24px #0008;
-  position: relative; /* Ensures z-index works */
+  position: relative; 
   z-index: 1; }
 
 .profile-img {
